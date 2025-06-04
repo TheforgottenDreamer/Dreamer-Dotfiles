@@ -1,0 +1,36 @@
+@import "colors.css";
+
+* {
+  font-family: "0xProto Nerd Font";
+  font-size: 10px;
+}
+
+
+#waybar {
+ background: transparent;
+}
+window#waybar{
+  background: alpha(@background, 0.89);
+  color: @text;
+  border-radius: 9rem;
+}
+
+#tray {
+  padding: 10;
+}
+
+#workspaces button {
+  color: @text;
+  background: transparent;
+  border-radius: 9rem;
+}
+
+#workspaces button.focused {
+  color: @text1;
+  background: @foreground;
+}
+
+#workspaces button.urgent {
+  color: @text1;
+  background: @red;
+}

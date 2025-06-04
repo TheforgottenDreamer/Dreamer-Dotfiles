@@ -1,0 +1,12 @@
+@define-color background #686868;
+@define-color foreground #373737;
+@define-color underline #C4C4C4;
+@define-color urgent #870000;
+
+@define-color text #000000;
+@define-color text1 #FFFFFF;
+
+@define-color green #00b008;
+@define-color pink #8f0057;
+@define-color red #ff0000;
+@define-color yellow #e3e83a;

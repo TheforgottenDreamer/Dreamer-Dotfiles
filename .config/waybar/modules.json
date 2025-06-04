@@ -1,0 +1,67 @@
+{
+  "custom/separator": {
+    "format": "|",
+    "interval": "once",
+    "tooltip": false
+  },
+    "sway/mode": {
+      "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+      "icon-size": 22,
+      "spacing": 10
+    },
+    "clock": {
+      //"timezone": "America/New_York",
+      "format": "{:%I:%M %p}",
+      "format-alt": "{:%A, %d %B %Y}",
+      "tooltip": false
+    },
+    "backlight": {
+      // "device": "acpi_video1",
+      "format": "{percent}% {icon}",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+      "states": {
+        // "good": 95,
+        "warning": 30,
+            "critical": 15
+      },
+      "format": "{capacity}% {icon}",
+      "format-full": "{capacity}% {icon}",
+      "format-charging": "{capacity}% ",
+      "format-plugged": "{capacity}% ",
+      "format-alt": "{time} {icon}",
+      // "format-good": "", // An empty format will hide the module
+      // "format-full": "",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": " {icon}  {volume}%",
+        "format-muted": " muted",
+        "format-icons": {
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/weather": {
+      "exec": "$HOME/.config/waybar/weather-plugin.sh",
+      "interval": 960
+    }
+}

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-polybar_user = '[user]
+polybar_user= '[user]
 battery =
 adapter =
 backlight ='
